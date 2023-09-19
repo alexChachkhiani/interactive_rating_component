@@ -1,0 +1,17 @@
+.star {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #262e38;
+  color: #7c8798;
+}
+
+.main {
+  border-radius: 15px;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+}
