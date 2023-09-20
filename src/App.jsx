@@ -6,12 +6,16 @@ import Rate from "./Components/Rate/Rate.jsx";
 import Result from "./Components/Result/Result";
 
 function App() {
+  const [number, setNumber] = useState();
   const [submit, setSubmit] = useState(false);
   console.log(submit);
   return (
     <div>
-      <Rate setSubmit={setSubmit} />
-      <Result />
+      {submit ? (
+        <Result number={number} />
+      ) : (
+        <Rate number={number} setNumber={setNumber} setSubmit={setSubmit} />
+      )}
     </div>
   );
 }
